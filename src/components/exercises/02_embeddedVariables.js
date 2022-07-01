@@ -16,29 +16,30 @@ const Demo = () => {
   ];
 
   return (
-   
-    <table className="table table-bordered">  
-    <thead>
-    <h1>{header}</h1>
-      <tr>
-        <th>Name</th>
-        <th>No lectures</th>
-        <th>No practicals</th>
-      </tr>
-    </thead>
-    <tbody >
-      <tr>
-        <td>{modules[0].name}</td>
-        <td>{modules[0].noLectures}</td>
-        <td>{modules[0].noPracticals}</td>
-      </tr>
-      <tr>
-        <td>{modules[1].name}</td>
-        <td>{modules[1].noLectures}</td>
-        <td>{modules[1].noPracticals}</td>
-      </tr>
-    </tbody >
-  </table>
+   <div>
+      <table className="table table-bordered">  
+      <thead>
+      <h1>{header}</h1>
+        <tr>
+          <th>Name</th>
+          <th>No lectures</th>
+          <th>No practicals</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr>
+          <td>{modules[0].name}</td>
+          <td>{modules[0].noLectures}</td>
+          <td>{modules[0].noPracticals}</td>
+        </tr>
+        <tr>
+          <td>{modules[1].name}</td>
+          <td>{modules[1].noLectures}</td>
+          <td>{modules[1].noPracticals}</td>
+        </tr>
+      </tbody >
+    </table>
+    </div>  
   );
 };
 
